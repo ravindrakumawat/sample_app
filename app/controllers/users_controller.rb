@@ -65,7 +65,6 @@ class UsersController < ApplicationController
    end
 
    def is_guest_user?
-    
      if current_user.present?
        redirect_to root_path
      end
